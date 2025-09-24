@@ -1,0 +1,2 @@
+../Core/Src/INS.c:3:6:INS_Init	16	static
+../Core/Src/INS.c:10:6:INS_Update	72	static
