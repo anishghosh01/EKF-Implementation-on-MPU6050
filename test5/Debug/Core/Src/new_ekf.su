@@ -1,0 +1,3 @@
+../Core/Src/new_ekf.c:3:6:New_EKF_Init	24	static
+../Core/Src/new_ekf.c:20:6:New_EKF_Predict	88	static
+../Core/Src/new_ekf.c:64:6:New_EKF_Update	272	static

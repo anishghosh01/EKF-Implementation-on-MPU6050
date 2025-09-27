@@ -1,7 +1,32 @@
-08:52:54 **** Incremental Build of configuration Debug for project test3 ****
+23:41:45 **** Incremental Build of configuration Debug for project test8 ****
 make -j16 all 
-arm-none-eabi-size  test3.elf 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -DUSE_HAL_DRIVER -DSTM32F446xx -D__FPU_PRESENT -c -I../Core/Inc -IC:/Users/anish/OneDrive/Desktop/Little_Brain_Plus/test/Drivers/CMSIS/DSP/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:51: warning: "__FPU_PRESENT" redefined
+   51 | #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+      | 
+<command-line>: note: this is the location of the previous definition
+arm-none-eabi-gcc -o "test8.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\anish\OneDrive\Documents\GitHub_Repositories\EKF-Implementation-on-MPU6050\test8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test8.map" -Wl,--gc-sections -static -L"C:\Users\anish\OneDrive\Documents\GitHub_Repositories\EKF-Implementation-on-MPU6050\test8\Drivers\CMSIS\Lib\GCC" -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test8.elf
+ 
+arm-none-eabi-size  test8.elf 
+arm-none-eabi-objdump -h -S test8.elf  > "test8.list"
    text	   data	    bss	    dec	    hex	filename
-  51752	    472	  21104	  73328	  11e70	test3.elf
+  50944	    472	  21056	  72472	  11b18	test8.elf
+Finished building: default.size.stdout
+ 
+Finished building: test8.list
+ 
+23:41:56 **** Incremental Build of configuration Debug for project test8 ****
+make -j16 all 
+arm-none-eabi-size  test8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  50944	    472	  21056	  72472	  11b18	test8.elf
 Finished building: default.size.stdout
  

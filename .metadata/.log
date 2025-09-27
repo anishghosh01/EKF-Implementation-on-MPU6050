@@ -22,3 +22,96 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-09-24 08:52:36.271
 !MESSAGE Indexed 'test3' (39 sources, 159 headers) in 3.01 sec: 22,071 declarations; 97,479 references; 1 unresolved inclusions; 231 syntax errors; 241 unresolved names (0.2%)
+!SESSION 2025-09-25 19:49:08.294 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-09-25 19:49:26.967
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-25 19:49:26.969
+!MESSAGE Log4j2 initialized with config file C:\Users\anish\OneDrive\Documents\GitHub_Repositories\EKF-Implementation-on-MPU6050\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-25 19:49:33.924
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-25 20:44:47.383
+!MESSAGE Indexed 'test4' (19 sources, 81 headers) in 3.05 sec: 4,563 declarations; 21,879 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0076%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-25 20:53:26.657
+!MESSAGE Indexed 'test4' (23 sources, 86 headers) in 2.69 sec: 6,358 declarations; 38,089 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0045%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-09-25 21:55:32.140
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 5 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-09-25 21:55:32.149
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-09-25 21:55:32.152
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 5 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-09-25 21:55:32.153
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-25 22:45:22.776
+!MESSAGE Indexed 'test5' (39 sources, 159 headers) in 3.94 sec: 22,071 declarations; 97,479 references; 1 unresolved inclusions; 231 syntax errors; 241 unresolved names (0.2%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-09-25 23:47:50.682
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 14 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-09-25 23:47:50.683
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-09-25 23:47:50.685
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 14 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-09-25 23:47:50.686
+!MESSAGE Existing sessions are:
+!SESSION 2025-09-26 11:30:07.227 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-09-26 11:30:33.258
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-26 11:30:33.261
+!MESSAGE Log4j2 initialized with config file C:\Users\anish\OneDrive\Documents\GitHub_Repositories\EKF-Implementation-on-MPU6050\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-26 11:30:42.561
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-26 11:37:29.618
+!MESSAGE Indexed 'test6' (40 sources, 159 headers) in 5.9 sec: 19,695 declarations; 90,722 references; 9 unresolved inclusions; 1,428 syntax errors; 1,789 unresolved names (1.6%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-09-26 11:47:57.257
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-26 12:02:46.329
+!MESSAGE Indexed 'test7' (40 sources, 161 headers) in 2.55 sec: 21,495 declarations; 91,602 references; 9 unresolved inclusions; 1,461 syntax errors; 2,285 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-26 12:11:18.562
+!MESSAGE Indexed 'test8' (41 sources, 202 headers) in 3.52 sec: 24,862 declarations; 101,128 references; 8 unresolved inclusions; 262 syntax errors; 1,526 unresolved names (1.2%)
+!SESSION 2025-09-27 23:08:05.718 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-09-27 23:08:17.216
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-27 23:08:17.218
+!MESSAGE Log4j2 initialized with config file C:\Users\anish\OneDrive\Documents\GitHub_Repositories\EKF-Implementation-on-MPU6050\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-27 23:08:26.055
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-27 23:09:03.465
+!MESSAGE Indexed 'test8' (39 sources, 160 headers) in 5.98 sec: 22,033 declarations; 97,274 references; 1 unresolved inclusions; 229 syntax errors; 241 unresolved names (0.2%)

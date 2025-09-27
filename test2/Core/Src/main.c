@@ -164,7 +164,7 @@ int main(void)
 	          }
 
 	          // Print results for debugging/plotting
-	          printf("%.2f,%.2f\r\n", ekf.phi_r, ekf.theta_r);
+	          printf("%.2f,%.2f\r\n", ekf.phi_r * (180.0f / PI), ekf.theta_r * (180.0f / PI));
 
 	          HAL_Delay(10);
   }
