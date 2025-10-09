@@ -38,34 +38,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := test6
+BUILD_ARTIFACT_NAME := test7
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-test6.elf \
+test7.elf \
 
 MAP_FILES += \
-test6.map \
+test7.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-test6.list \
+test7.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: test6.elf secondary-outputs
+main-build: test7.elf secondary-outputs
 
 # Tool invocations
-test6.elf test6.map: $(OBJS) $(USER_OBJS) C:\Users\anish\OneDrive\Documents\GitHub_Repositories\EKF-Implementation-on-MPU6050\test6\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "test6.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\anish\OneDrive\Documents\GitHub_Repositories\EKF-Implementation-on-MPU6050\test6\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test6.map" -Wl,--gc-sections -static -L"C:\Users\anish\OneDrive\Documents\GitHub_Repositories\EKF-Implementation-on-MPU6050\test6\Drivers\CMSIS\Lib\GCC" -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+test7.elf test7.map: $(OBJS) $(USER_OBJS) C:\Users\anish\OneDrive\Documents\GitHub_Repositories\EKF-Implementation-on-MPU6050\test7\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "test7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\anish\OneDrive\Documents\GitHub_Repositories\EKF-Implementation-on-MPU6050\test7\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test7.map" -Wl,--gc-sections -static -L"C:\Users\anish\OneDrive\Documents\GitHub_Repositories\EKF-Implementation-on-MPU6050\test7\Drivers\CMSIS\Lib\GCC" -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -74,14 +74,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-test6.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "test6.list"
+test7.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "test7.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) default.size.stdout test6.elf test6.list test6.map
+	-$(RM) default.size.stdout test7.elf test7.list test7.map
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
